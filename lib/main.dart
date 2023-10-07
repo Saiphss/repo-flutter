@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -106,7 +108,9 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Esta é a quantidade de vezes que você pressionou o botão:',
+              style: TextStyle(
+                  color: Color.fromARGB(255, 21, 0, 79), fontSize: 20),
             ),
             Text(
               '$_counter',
